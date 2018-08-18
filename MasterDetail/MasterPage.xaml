@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Title="Master Page"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterDetail.MasterPage">
+    <ContentPage.Content>
+<!--        <StackLayout>
+            <Button x:Name="Page1Button" Text="First page"/>
+            <Button x:Name="Page2Button" Text="Second Page"/>
+        </StackLayout>-->
+        <ListView x:Name="MasterList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell ImageSource="{Binding Icon}" Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
